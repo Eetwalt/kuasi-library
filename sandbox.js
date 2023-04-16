@@ -21,7 +21,6 @@ const calendarButton = new rive.Rive({
         //Add an else if for all states that should have the 'pointer' cursor
       } else if (state.indexOf("on-hover") > -1) {
         calendarCanvas.style.cursor = "pointer";
-        animationText.classList.add("hovered");
       } else if (state.indexOf("Idle") > -1) {
         calendarCanvas.style.cursor = "default";
       }
@@ -30,5 +29,5 @@ const calendarButton = new rive.Rive({
 });
 
 calendarLink.addEventListener("mouseover", function() {
-    calendarButton.state.indexOf("on-hover");
+    calendarButton.newStates.indexOf("on-hover");
 });
