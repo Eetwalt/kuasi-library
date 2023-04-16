@@ -28,8 +28,8 @@ const calendarButton = new rive.Rive({
   }
 });
 
-calendarButton.on('hover', (id, value) => {
-    if (id === 'hover') {
+calendarButton.on('on-hover', (id, value) => {
+    if (id === 'on-hover') {
       if (value === 1) {
         animationText.classList.add('hovered');
         console.log("hovered");
