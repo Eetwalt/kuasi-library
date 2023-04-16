@@ -30,5 +30,5 @@ const calendarButton = new rive.Rive({
 });
 
 calendarLink.addEventListener("mouseover", function() {
-    calendarButton.classList.add("hovered");
+    calendarButton.state.indexOf("on-hover");
 });
