@@ -1,5 +1,7 @@
 const calendarCanvas = document.getElementById("calendar-canvas");
-const animationText = document.getElementById("animationText");
+const animationText = document.getElementById("animation-text");
+const calendarLink = document.getElementById("calendar-link");
+
 const calendarButton = new rive.Rive({
   src:
     "https://uploads-ssl.webflow.com/643bea714b119b1c10dce229/643beff8777c73226f2a3e76_calendar-test.riv.txt",
@@ -25,4 +27,8 @@ const calendarButton = new rive.Rive({
       }
     });
   }
+});
+
+calendarLink.addEventListener("mouseover", function() {
+    calendarButton.classList.add("hovered");
 });
