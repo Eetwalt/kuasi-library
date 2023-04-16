@@ -28,6 +28,12 @@ const calendarButton = new rive.Rive({
   }
 });
 
-calendarLink.addEventListener("mouseover", function() {
-    calendarButton.newStates.indexOf("on-hover");
-});
+calendarButton.on('hover', (id, value) => {
+    if (id === 'hover') {
+      if (value === 1) {
+        animationText.classList.add('hovered');
+      } else {
+        animationText.classList.remove('hovered');
+      }
+    }
+  });
