@@ -5,6 +5,3 @@ window.onload = function() {
   console.log("Your script is working!");
   testText.textContent = "Hello category page!";
 };
-
-
-  
